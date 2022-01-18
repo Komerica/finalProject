@@ -1,0 +1,34 @@
+<!-- header -->
+<nav class="flex-container">
+  <div class="menu-logo" id="go-to-main">
+    <i class="fas fa-pager"></i>
+    <a href="#">Pagers</a>
+  </div>
+  <ul class="nav-flex open">
+    <li class="menu-item" id="go-to-about">About</li>
+    <li class="menu-item" id="go-to-products">Products</li>
+    <li class="menu-item" id="go-to-contact">Contact</li>
+  </ul>
+  <button class="navbar-toggle-btn">
+    <i class="fas fa-bars"></i>
+  </button>
+</nav>
+<!-- nav bar move-->
+<script>
+  document.getElementById("go-to-main").addEventListener("click", function () {
+    location.href = "main.html";
+  });
+  document.getElementById("go-to-about").addEventListener("click", function () {
+    location.href = "about.html";
+  });
+  document
+    .getElementById("go-to-products")
+    .addEventListener("click", function () {
+      location.href = "products.html";
+    });
+  document
+    .getElementById("go-to-contact")
+    .addEventListener("click", function () {
+      location.href = "contact.html";
+    });
+</script>
